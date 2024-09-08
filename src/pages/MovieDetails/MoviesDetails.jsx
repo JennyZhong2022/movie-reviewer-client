@@ -15,7 +15,7 @@ const MovieDetails = ({ movie, directors, actors }) => {
     const fetchComments = async () => {
       try {
         const response = await fetch(
-          `https://movie-reviewer-0rv9.onrender.com/api/movies/${id}/comments`
+          `https://movie-reviewer-api.onrender.com/api/movies/${id}/comments`
         );
         if (!response.ok) {
           throw new Error("Failed to fetch comments");
@@ -43,13 +43,16 @@ const MovieDetails = ({ movie, directors, actors }) => {
     if (!commentText) return;
 
     try {
-      const response = await fetch(`/api/movies/${id}/comments`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({ commentText }),
-      });
+      const response = await fetch(
+        `https://movie-reviewer-api.onrender.com/api/movies/${id}/comments`,
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({ commentText }),
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Failed to submit comment");

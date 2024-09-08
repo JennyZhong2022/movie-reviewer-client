@@ -25,7 +25,7 @@ const SignIn = () => {
   const onSubmit = async (data) => {
     try {
       const res = await fetch(
-        "https://movie-reviewer-0rv9.onrender.com/api/auth/signin",
+        "https://movie-reviewer-api.onrender.com/api/auth/signin",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

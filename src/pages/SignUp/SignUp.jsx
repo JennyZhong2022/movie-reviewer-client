@@ -22,7 +22,7 @@ const SignUp = () => {
   const onSubmit = async (data) => {
     try {
       const res = await fetch(
-        "https://movie-reviewer-0rv9.onrender.com/api/auth/signup",
+        "https://movie-reviewer-api.onrender.com/api/auth/signup",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
