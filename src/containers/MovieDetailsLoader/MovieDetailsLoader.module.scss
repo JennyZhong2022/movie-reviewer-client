@@ -1,0 +1,14 @@
+.MovieDetailsLoaderContainer {
+  padding: 0 10rem;
+
+  @media (max-width: 1024px) {
+    padding: 0 2rem;
+  }
+
+  .loadingMessage {
+    padding: 2rem 0;
+    color: #1fbd47;
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}

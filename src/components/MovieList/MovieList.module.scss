@@ -1,0 +1,51 @@
+
+.MovieCard {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.loadMoreBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+  button {
+    max-width: 20vw;
+    width: 100%;
+    color: white;
+    background-color: #1fbd47;
+    border: 0;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#1fbd47, 10%);
+    }
+  }
+}
+
+.loadingMessage {
+  padding: 2rem 0;
+  color: #1fbd47;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.noFoundMessage {
+  color: #1fbd47;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20vh;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.errorMessage {
+  color: red;
+  font-size: 1.5rem;
+  text-align: center;
+}
